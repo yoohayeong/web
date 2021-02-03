@@ -1,0 +1,322 @@
+/* Base */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-family: "맑은 고딕";
+    font-size: 16px;
+}
+.clearfix:before, .clearfix:after{
+    content: " ";
+    display: block;
+}
+.clearfix:after{
+    clear: both;
+}
+/*slideshow*/
+.slideshow{
+    position: relative;
+    height: 465px;
+    min-width: 960px;
+    overflow: hidden;
+}
+.slideshow img{
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+    display: none;
+}
+
+/*Page-header*/
+.page-header{
+    width: 100%;
+    min-width: 960px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+    position: absolute;
+    z-index: 30;
+}
+.page-header.sticky{   /* 스크롤 시 고정 헤더 처리 */
+    position: fixed;
+    top: 0;
+}
+.page-header>.inner{
+    width: 960px;
+    margin: 0 auto;
+}
+.site-logo{
+    float: left;
+}
+.primary-nav{
+    float: right;
+    line-height:  65px;
+}
+.primary-nav li{
+    float: left;
+}
+.primary-nav li a{
+    display: block;
+    padding: 0 18px;
+}
+.primary-nav li a:hover{
+    background-color: rgb(240, 240, 240);
+}
+/* topics section */
+.topics-section{
+    box-shadow: 0 1px 1px rgba(0,0, 0, 0.3);
+}
+.topics-section>.inner{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 125px;
+    padding-bottom: 75px;
+}
+.topics-list li{
+    float: left;
+    width: 304px;
+    margin-left: 10px;
+}
+.topics-list li a{
+    display: block;
+}
+.topics-list .image-wrapper{
+    margin-bottom: 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+.topics-list .title{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+}
+.topics-list .date{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 19px;
+    color: rgb(128, 128, 128);
+}
+.topics-list .description{
+    font-size: 12px;
+    line-height: 19px;
+    color: rgb(77,77,77);
+}
+/* work section*/
+.work-section{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.work-section .section-header{
+    text-transform: uppercase;
+    line-height: 70px;
+}
+.work-section .section-header>.inner{
+    width: 960px;
+    margin: 0 auto;
+}
+.work-section h2{
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+}
+.work-section .tabs-nav{
+    border-left: 1px solid #ccc;
+    float: right;
+}
+.work-section .tabs-nav li{
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.work-section .tabs-nav li a{
+    display: block;
+    padding: 0 19px;
+}
+.work-section .tabs-nav li a:hover{
+    background-color: rgb(51,51,51);
+    color: #fff;
+}
+.work-section .section-body{
+    height: 400px;
+    position: relative;
+}
+.work-section .section-body .image-wrapper{
+    min-width: 960px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+.work-section .section-body .image-wrapper img{
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+}
+.work-section .section-body .content{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+.work-section .section-body .content>.inner{
+    position: absolute;
+    width: 250px;
+}
+.work-section .section-body #work01 .content>.inner{
+    top: 20px;
+    left: 680px;
+}
+.work-section .section-body #work02 .content>.inner{
+    top: 140px;
+    left: 40px;
+}
+.work-section .section-body #work03 .content>.inner{
+    top: 50px;
+    left: 50px;
+}
+.work-section .section-body #work04 .content>.inner{
+    top: 50px;
+    left: 50px;
+}
+.work-section .section-body #work05 .content>.inner{
+    top: 50px;
+    left: 680px;
+}
+.work-section .section-body .title{
+    font-size: 60px;
+    font-weight: normal;
+    color: #fff;
+}
+.work-section .section-body .description{
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+.work-section .section-body .read-more{
+    display: inline-block;
+    font-size: 14px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 19px;
+    padding: 15px 16px;
+    text-transform: uppercase;
+}
+/* contact form */
+.contact-form .form-item{
+    margin-top: 8px;
+}
+.contact-form label{
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+.contact-form input, .contact-form textarea{
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px;
+    outline: none;
+}
+.contact-form input[type="text"], .contact-form input[type="email"]{
+    width: 200px;
+}
+.contact-form textarea{
+    width: 340px;
+    height: 160px;
+    resize: none;
+}
+.contact-form input[type="submit"]{
+    border: 0;
+    color: #fff;
+    background-color: rgb(128,128,128);
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+/* contact map*/
+.contact-section{
+    background-color: #cdcdcd;
+}
+.contact-section>.inner{
+    min-width: 960px;
+    height: 500px;
+    position: relative;
+}
+.contact-map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+}
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+.contact-section h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+}
+.contact-form-wrapper{
+    width: 352px;
+    position: absolute;
+    left: 50%;
+    padding: 56px 64px 0;
+}
+/* footer */
+.page-footer>.inner{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.back-to-top{
+    border: 0;
+    display: block;
+    background-color: #ccc;
+    width: 100%;
+    padding: 16px;
+    outline: none;
+}
+.back-to-top .label{
+    display: block;
+    width: 35px;
+    height: 18px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.back-to-top .label img{
+    position: absolute;
+    left: -35px;
+}
+/* social links */
+.social-links{
+    float: left;
+}
+.social-links li{
+    float: left;
+    margin-left: 5px;
+}
+.social-links a{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 3px 2px;
+    background-image: url("../img/sprites.png");
+    width: 16px;
+    height: 16px;   
+}
+.social-links .item-facebook a{
+    background-position: -68px;
+}
+.social-links .item-twitter a{
+    background-position:-87px;
+}
+.social-links .label{
+    display: none;
+}
+.copyright{
+    float: right;
+    color: #cdcdcd;
+    text-transform: uppercase;
+}
